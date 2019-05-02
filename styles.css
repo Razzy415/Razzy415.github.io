@@ -97,6 +97,7 @@ text-align:  center;}
         border-bottom: solid rgb(226, 225, 225);
         border-bottom-width: 40px;
         border-right: 20px;
+        object-fit: contain
     }
     /* Override Body Background from Bootswatch */
 }
