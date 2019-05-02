@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+  content="ie=edge">
+  <!-- Bootstrap Stylesheet-->
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+  <!-- My Stylesheet-->
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color: rgb(112, 170, 170))}
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" target="_self" href="index.html">Latitude</a>
+              </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="maxtemp.html">Max Temperature</a></li>
+                      <li><a href="humidity.html">Humidity</a></li>
+                      <li><a href="cloudiness.html">Cloudiness</a></li>
+                      <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="comparison.html">Comparison</a></li>
+                  <li><a href="data.html">Data</a></li>
+                </ul>
+              </div>
+            </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+          <h1>Cloudiness</h1>
+          <hr>
+            <img src="assets/images/latitude_vs_cloudiness.png" alt="latitude_vs_cloudiness" height="400" width="600" align="center">
+          <p>There is no relationship between latitude and cloudiness.  The percent of cloudiness does not vary with different latitudes.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+           <!-- Used Figure tags and renamed images for semantics/SEO-->
+           <h2>Visualizations</h2>
+           <hr>
+           <figure class= "col-md-6 col-sm-3">
+             <a href="maxtemp.html">
+                 <img id ="pic1" src="assets/images/latitude_vs_maxtemp.png" alt="latitude_vs_maxtemp" height="150" width="150"> 
+                 <figcaption><em>Latitude vs Max Temp</em></figcaption>
+             </a>
+           </figure> 
+               <figure class= "col-md-6 col-sm-3">
+                   <a href="humidity.html">
+                   <img id ="pic2" src="assets/images/latitude_vs_humidity.png" alt="latitude_vs_humidity" height="150" width="150">
+                   <figcaption><em>Latitude vs Humidity</em></figcaption>
+                   </a>
+               </figure> 
+               <figure class= "col-md-6 col-sm-3">
+                   <a href="cloudiness.html">
+                   <img id = "pic3" src="assets/images/latitude_vs_cloudiness.png" alt="cloudiness" height="150" width="150">
+                   <figcaption><em>Latitude vs Cloudiness</em></figcaption>
+                   </a>
+               </figure> 
+               <figure class= "col-md-6 col-sm-3">
+                   <a href="windspeed.html">
+                   <img id = "pic4" src="assets/images/latitude_vs_windspeed.png" alt="windspeed" height="150" width="150">
+                   <figcaption><em>Latitude vs Windspeed</em></figcaption>
+                   </a>
+               </figure> 
+</div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+        

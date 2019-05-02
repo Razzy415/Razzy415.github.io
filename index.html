@@ -1,54 +1,94 @@
-<!doctype html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Activity 1: Basic HTML Bio</title>
-    </head>
-        <style>
-          table, th, td {
-            border: 1px solid black;
-          }
-        </style>
-    <body>
-      
-    <h1>Elliazar Enriquez</h1>
-      
-    <img src="https://i.pinimg.com/originals/5b/8d/35/5b8d354c534c5f4f3404c84a12d892eb.jpg" alt="MTG Symbols" style="width:200px;height:200px;>
-    
-    <p>My name is Elliazar Enriquez, born and raised in the Philippines. I immigrated here in the US at the age of 16. My friends call me Eli but my relatives gave me the nickname Larry.
-        
-    During my freetime I like to go out backpacking, build PCs, and pwning noobs in any videogame I play.
-    </p>
-        
-        <ul>
-          <li><strong>Email:</strong> <a href="#">elliazarenriquez@gmail.com</a></li>
-          <li><strong>Github:</strong> <a href="#">https://razzy415.github.io/</a></li>
-          <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-        </ul>
-      
-        <table style="width:100%">
-          <tbody><tr>
-            <th>Books</th>
-            <th>Movies</th>
-            <th>Games</th>
-          </tr>
-          <tr>
-            <td>The Hobbit</td>
-            <td>Gladiator</td>
-            <td>Dark Souls</td>
-          </tr>
-          <tr>
-            <td>Song of Fire and Ice</td>
-            <td>Training Day</td>
-            <td>The Last of Us</td>
-          </tr>
-          <tr>
-            <td>Holes</td>
-            <td>The Matrix</td>
-            <td>Dragon Age: Origins</td>
-          </tr>
-        </tbody></table>
-      
-      
-      
-      </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+  content="ie=edge">
+  <!-- Bootstrap Stylesheet-->
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+  <!-- My Stylesheet-->
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color: rgb(112, 170, 170))}
+  </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" target="_self" href="index.html">Latitude</a>
+                  </div>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <hr>
+                    <br>
+                    <img src="assets/images/latitude_vs_maxtemp.png" alt="latitude_vs_maxtemp" height="200" width="200" align = "left">
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis,
+                    we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
+                    </p>
+                    <p>After assembling the dataset, we used MatplotLib to plot various aspects of the weather vs latitude.  Factors we looked at included:
+                    temperature, cloudiness, humidity, and wind speed.  This site provides the source data and visualizations created as part of the 
+                    analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <!-- Used Figure tags and renamed images for semantics/SEO-->
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <figure class= "col-md-6 col-sm-3">
+                      <a href="maxtemp.html">
+                          <img id ="pic1" src="assets/images/latitude_vs_maxtemp.png" alt="latitude_vs_maxtemp" height="150" width="150"> 
+                          <figcaption><em>Latitude vs Max Temp</em></figcaption>
+                      </a>
+                    </figure> 
+                        <figure class= "col-md-6 col-sm-3">
+                            <a href="humidity.html">
+                            <img id ="pic2" src="assets/images/latitude_vs_humidity.png" alt="latitude_vs_humidity" height="150" width="150">
+                            <figcaption><em>Latitude vs Humidity</em></figcaption>
+                            </a>
+                        </figure> 
+                        <figure class= "col-md-6 col-sm-3">
+                            <a href="cloudiness.html">
+                            <img id = "pic3" src="assets/images/latitude_vs_cloudiness.png" alt="cloudiness" height="150" width="150">
+                            <figcaption><em>Latitude vs Cloudiness</em></figcaption>
+                            </a>
+                        </figure> 
+                        <figure class= "col-md-6 col-sm-3">
+                            <a href="windspeed.html">
+                            <img id = "pic4" src="assets/images/latitude_vs_windspeed.png" alt="windspeed" height="150" width="150">
+                            <figcaption><em>Latitude vs Windspeed</em></figcaption>
+                            </a>
+                        </figure> 
+                </div>
+            </div>
+        </div>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </html>
