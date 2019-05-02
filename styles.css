@@ -40,6 +40,7 @@
 .container img {
     display: inline;
     margin: 20px 20px;
+    object-fit: contain;
 }
 .container p {
     display: block;
@@ -97,7 +98,7 @@ text-align:  center;}
         border-bottom: solid rgb(226, 225, 225);
         border-bottom-width: 40px;
         border-right: 20px;
-        object-fit: contain
+        object-fit: contain;
     }
     /* Override Body Background from Bootswatch */
 }
